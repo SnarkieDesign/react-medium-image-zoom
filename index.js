@@ -1,8 +1,13 @@
-const serve = require('koa-static')
-const koa = require('koa')
-const app = new koa()
+'use strict';
 
-app.use(serve('docs/.'))
-app.listen(3000)
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
-console.log(`=> A development server is running at http://localhost:3000`)
+var _ImageZoom = require('./ImageZoom');
+
+var _ImageZoom2 = _interopRequireDefault(_ImageZoom);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _ImageZoom2.default;
