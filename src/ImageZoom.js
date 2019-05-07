@@ -279,12 +279,16 @@ export default class ImageZoom extends Component {
 ImageZoom.propTypes = {
   image: shape({
     src: string.isRequired,
+    srcSet: string,
+    size: string,
     alt: string,
     className: string,
     style: object
   }).isRequired,
   zoomImage: shape({
     src: string,
+    srcSet: string,
+    size: string,
     alt: string,
     className: string,
     style: object
